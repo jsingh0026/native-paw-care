@@ -24,15 +24,15 @@ function Events() {
                 <Text style={styles.eventHeading}>Upcoming Events</Text>
                 </View>
                 <View style={styles.card}>
-                    <Text style={{fontSize: 16, fontWeight:"bold"}}>{Events[0].title}</Text>
-                    <Text>
+                    <Text style={styles.cardHead}>{Events[0].title}</Text>
+                    <Text style={styles.cardContent}>
                     <FontAwesome name="birthday-cake" size={20} color="black" />{Events[0].Descprition}
                     </Text>
-                    <Text>
-                    <MaterialCommunityIcons name="calendar" size={24} color="black" />{Events[0].date}
+                    <Text style={styles.cardContent}>
+                    <MaterialCommunityIcons name="calendar" size={20} color="black" />{Events[0].date}
                     </Text>
-                    <Text>
-                    <MaterialCommunityIcons name="clock" size={24} color="black" />{Events[0].time}
+                    <Text style={styles.cardContent}>
+                    <MaterialCommunityIcons name="clock" size={20} color="black" />{Events[0].time}
                     </Text>
                 </View>
                 {/* <ScrollView style={styles.scrollContainer} horizontal={true}>
@@ -63,6 +63,17 @@ const styles = StyleSheet.create({
         borderRadius: 15,
         padding: 10,
         justifyContent: "center"
+    },
+    cardHead:{
+        borderWidth: 1,
+        borderColor: 'lightblue',
+    },
+    cardContent:{
+        borderWidth: 1,
+        borderColor: 'lightblue',
+        justifyContent: "center",
+        fontSize: 16,
+        
     }
 })
 

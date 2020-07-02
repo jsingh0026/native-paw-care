@@ -3,6 +3,7 @@ import { View, StyleSheet, Text, ScrollView } from 'react-native'
 import PetSmallCard from '../components/PetSmallCard'
 import OwnerSmallCard from '../components/OwnerSmallCard'
 import Events from '../components/Events'
+import AddPet from '../components/AddPet'
 
 function Home() {
     const pets = [
@@ -18,6 +19,7 @@ function Home() {
                 </View>
                 <ScrollView style={styles.scrollContainer} horizontal={true}>
                     {pets.map(pet=>(<PetSmallCard key={pet.id} path = {pet.imgSrc} pet={pet}/>))}
+                    <AddPet/>
                 </ScrollView>
             </View>
             <Events/>

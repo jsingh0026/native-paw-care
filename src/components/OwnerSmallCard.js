@@ -1,6 +1,5 @@
 import React from 'react'
 import { View, StyleSheet, Text, Image } from 'react-native'
-import { Foundation } from '@expo/vector-icons';
 
 function OwnerSmallCard() {
     return (
@@ -15,7 +14,6 @@ function OwnerSmallCard() {
                 source={require('../assets/person.png')}
             />
             <Text style={styles.userName}>Hello, Owner!</Text>
-            <Text style={{color:'coral', fontSize: 20, padding: 5}}>Add</Text><Foundation name="paw" size={24} color="coral" />
         </View>
     )
 }
