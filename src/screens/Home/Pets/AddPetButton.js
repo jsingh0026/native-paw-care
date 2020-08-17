@@ -6,7 +6,7 @@ function AddPet({path, pet}) {
     return (
         <View style={styles.container}>
             <View style={styles.addPetContainer}>
-            <Foundation name="paw" size={54} color="coral" />
+            <Foundation name="paw" size={54} color="#7469DD" />
             </View>
             <Text style={styles.petName}>Add</Text>
         </View>
@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
     },
     petName: {
         textAlign: "center",
-        color:'coral',
+        color:'#3F4089',
 
     },
     addPetContainer: {
@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
         // padding: 10,
         borderRadius: 20,
         borderWidth: 2,
-        borderColor: 'coral',
+        borderColor: '#7469DD',
     },
     petImg: {
         width: '100%',

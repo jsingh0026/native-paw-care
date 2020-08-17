@@ -1,7 +1,7 @@
 import React from 'react'
 import { View, StyleSheet, Text, Image } from 'react-native'
 
-function PetSmallCard({path, pet}) {
+function PetCards({path, pet}) {
     return (
         <View style={styles.container}>
             <View style={styles.petContainer}>
@@ -45,4 +45,4 @@ const styles = StyleSheet.create({
     }
 })
 
-export default PetSmallCard
+export default PetCards
